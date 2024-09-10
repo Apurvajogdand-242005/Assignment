@@ -1,0 +1,100 @@
+const { Container, Button, Typography, Grid, Card, CardContent } = window['MaterialUI'];
+
+const Home = () => {
+    return (
+        <Container maxWidth="lg" className="bg-gray-900 text-white py-10">
+            <header className="text-center mb-10">
+                <Typography variant="h2" component="h1" gutterBottom>
+                    Empowering You to Achieve Financial Freedom Smart Simple Solutions
+                </Typography>
+                <Typography variant="body1" paragraph>
+                    Our app is designed to simplify your financial life, providing intuitive tools and insights to help you manage your money effectively.
+                </Typography>
+                <Button variant="contained" color="primary" className="mr-4">Get Started</Button>
+                <Button variant="outlined" color="inherit">Join Now</Button>
+            </header>
+
+            <section className="mb-10">
+                <Grid container spacing={3} className="text-center">
+                    <Grid item xs={12} md={4}>
+                        <Typography variant="h4" className="text-green-400">$0.67 B</Typography>
+                        <Typography variant="body2">Total User Crypto Assets Value</Typography>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Typography variant="h4" className="text-green-400">704K+</Typography>
+                        <Typography variant="body2">Total Number of Verified Users</Typography>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Typography variant="h4" className="text-green-400">113K+</Typography>
+                        <Typography variant="body2">CHSB Token Holders</Typography>
+                    </Grid>
+                </Grid>
+            </section>
+
+            <section className="mb-10">
+                <Typography variant="h4" className="mb-5">Comprehensive Financial Management</Typography>
+                <Typography variant="body1" className="mb-5">
+                    Manage your finances effortlessly with our all-in-one platform offering budgeting, savings, investment tracking, and bill management.
+                </Typography>
+                <Button variant="contained" color="primary" className="mr-4">Get Started Today</Button>
+                <Button variant="outlined" color="inherit">Explore Our Services</Button>
+            </section>
+
+            <section className="mb-10">
+                <Typography variant="h4" className="mb-5">All-Inclusive Financial Management</Typography>
+                <Typography variant="body1" className="mb-5">
+                    Our all-inclusive financial management system offers a complete suite of tools to handle every aspect of your finances.
+                </Typography>
+                <Button variant="contained" color="primary" className="mr-4">Get Started Today</Button>
+                <Button variant="outlined" color="inherit">Explore Our Services</Button>
+            </section>
+
+            <section className="mb-10">
+                <Typography variant="h4" className="mb-5">Frequently Asked Questions</Typography>
+                <div className="mb-5">
+                    <Button variant="outlined" color="primary">Ask Us</Button>
+                </div>
+                <Typography variant="body1">How do I set up an account?</Typography>
+                <Typography variant="body1">What features does your app offer?</Typography>
+                <Typography variant="body1">Is my financial data secure?</Typography>
+                <Typography variant="body1">How can I contact customer support?</Typography>
+                <Typography variant="body1">What should I do if I forget my password?</Typography>
+            </section>
+
+            <section className="mb-10">
+                <Typography variant="h4" className="mb-5">Get In Touch for Pricing</Typography>
+                <Grid container spacing={3}>
+                    <Grid item xs={12} md={6}>
+                        <Card className="bg-gray-800 text-white">
+                            <CardContent>
+                                <Typography variant="h5">Personal</Typography>
+                                <Typography variant="h6">$541 <span className="text-gray-400">Per Month</span></Typography>
+                                <Button variant="contained" color="primary">Get Started Now</Button>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Card className="bg-gray-800 text-white">
+                            <CardContent>
+                                <Typography variant="h5">Pro</Typography>
+                                <Typography variant="h6">$747 <span className="text-gray-400">Per Month</span></Typography>
+                                <Button variant="contained" color="primary">Get Started Now</Button>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                </Grid>
+            </section>
+
+            <footer className="bg-gray-800 text-white text-center py-5">
+                <Typography variant="h6">Connect your finances with Carty</Typography>
+                <Button variant="contained" color="primary">Join Finzen Now</Button>
+                <Typography variant="body2" className="mt-2">&copy; 2024 Finzen All Rights Reserved</Typography>
+            </footer>
+        </Container>
+    );
+};
+
+ReactDOM.render(<Home />, document.getElementById('root'));
+
+//linked with html file 
+<div id="root"></div>
